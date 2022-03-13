@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0556b57c3ce576457c065d7f65ab3a69",
+    "content-hash": "c99ccd8849ad3e9f6a56cd6cceb3a49f",
     "packages": [
         {
             "name": "clevercanyon/utilities",
@@ -214,6 +214,86 @@
                 "source": "https://github.com/clevercanyon/wpgroove-framework/tree/main"
             },
             "time": "2022-03-13T15:38:03+00:00"
+        },
+        {
+            "name": "clevercanyon/wpgroove-framework-pro",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clevercanyon/wpgroove-framework-pro.git",
+                "reference": "747dc00b78847875b570948a237754898e7dbd7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework-pro/zipball/747dc00b78847875b570948a237754898e7dbd7a",
+                "reference": "747dc00b78847875b570948a237754898e7dbd7a",
+                "shasum": ""
+            },
+            "require": {
+                "clevercanyon/utilities": "dev-main",
+                "clevercanyon/wpgroove-framework": "dev-main"
+            },
+            "require-dev": {
+                "clevercanyon/wpgroove-framework-dev": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "clevercanyon": {
+                    "$extends-packages": [
+                        "clevercanyon/wpgroove-framework"
+                    ],
+                    "&": {
+                        "project": {
+                            "data": {
+                                "version": "1.0.0",
+                                "stable_tag": "1.0.0",
+                                "layout": "library",
+                                "namespace_crux": "WP_Groove\\Framework_Pro",
+                                "name": "WP Groove: Pro WordPress Framework"
+                            }
+                        },
+                        "webpack": {
+                            "assetDirs": [
+                                "../../../src/assets/admin"
+                            ]
+                        },
+                        "post_cmd_handler": {
+                            "symlink_local_packages": {
+                                "$concat": {
+                                    "vendor": [
+                                        "clevercanyon/wpgroove-framework-pro"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WP_Groove\\Framework_Pro\\": [
+                        "./src/classes"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WP Groove",
+                    "homepage": "https://wpgroove.com",
+                    "role": "organization"
+                }
+            ],
+            "description": "WP Groove’s pro framework for WordPress.",
+            "support": {
+                "issues": "https://github.com/clevercanyon/wpgroove-framework-pro/issues",
+                "source": "https://github.com/clevercanyon/wpgroove-framework-pro/tree/main"
+            },
+            "time": "2022-03-13T15:45:12+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1355,7 +1435,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "clevercanyon/wpgroove-framework": 20
+        "clevercanyon/wpgroove-framework-pro": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
