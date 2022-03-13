@@ -9,7 +9,7 @@
 		"prepend-autoloader" : false
 	},
 	"require"           : {
-		"clevercanyon/wpgroove-framework-pro" : "dev-main"
+		"clevercanyon/wpgroove-framework" : "dev-main"
 	},
 	"autoload"          : {
 		"psr-4" : {
