@@ -1,0 +1,19 @@
+{
+	"name"              : "clevercanyon/wpgroove-framework-pro-plugin",
+	"prefer-stable"     : true,
+	"minimum-stability" : "dev",
+	"config"            : {
+		"platform"           : {
+			"php" : "7.4.0"
+		},
+		"prepend-autoloader" : false
+	},
+	"require"           : {
+		"clevercanyon/wpgroove-framework-pro" : "dev-main"
+	},
+	"autoload"          : {
+		"psr-4" : {
+			"WP_Groove\\Framework_Pro_Plugin\\" : [ "./src/classes" ]
+		}
+	}
+}

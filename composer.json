@@ -1,0 +1,76 @@
+{
+	"license"           : "GPL-2.0-or-later",
+	"name"              : "clevercanyon/wpgroove-framework-pro",
+	"description"       : "WP Groove’s pro framework for WordPress.",
+	"authors"           : [
+		{
+			"name"     : "WP Groove",
+			"homepage" : "https://wpgroove.com",
+			"role"     : "organization"
+		}
+	],
+	"prefer-stable"     : true,
+	"minimum-stability" : "dev",
+	"config"            : {
+		"platform"      : {
+			"php" : "7.4.0"
+		},
+		"allow-plugins" : {
+			"dealerdirect/phpcodesniffer-composer-installer" : true,
+			"composer/package-versions-deprecated"           : true
+		}
+	},
+	"require"           : {
+		"clevercanyon/utilities"          : "dev-main",
+		"clevercanyon/wpgroove-framework" : "dev-main"
+	},
+	"autoload"          : {
+		"psr-4" : {
+			"WP_Groove\\Framework_Pro\\" : [ "./src/classes" ]
+		}
+	},
+	"require-dev"       : {
+		"clevercanyon/wpgroove-framework-dev" : "dev-main"
+	},
+	"autoload-dev"      : {
+		"psr-4" : {
+			"Clever_Canyon\\Utilities\\Tests\\" : [ "./vendor/clevercanyon/utilities/tests/classes" ],
+			"WP_Groove\\Framework\\Tests\\"     : [ "./vendor/clevercanyon/wpgroove-framework/tests/classes" ],
+			"WP_Groove\\Framework_Pro\\Tests\\" : [ "./tests/classes" ]
+		}
+	},
+	"scripts"           : {
+		"compile"          : "./vendor/clevercanyon/wpgroove-framework/dev/cli-tools/composer/compile",
+		"post-install-cmd" : "[ $COMPOSER_DEV_MODE -eq 0 ] || ./vendor/clevercanyon/wpgroove-framework/dev/cli-tools/composer/on-post-install-cmd",
+		"post-update-cmd"  : "[ $COMPOSER_DEV_MODE -eq 0 ] || ./vendor/clevercanyon/wpgroove-framework/dev/cli-tools/composer/on-post-update-cmd"
+	},
+	"extra"             : {
+		"clevercanyon" : {
+			"$extends-packages" : [ "clevercanyon/wpgroove-framework" ],
+			"&"                 : {
+				"project"          : {
+					"data" : {
+						"version"        : "1.0.0",
+						"stable_tag"     : "1.0.0",
+
+						"layout"         : "library",
+						"namespace_crux" : "WP_Groove\\Framework_Pro",
+						"name"           : "WP Groove: Pro WordPress Framework"
+					}
+				},
+				"webpack"          : {
+					"assetDirs" : [ "../../../src/assets/admin" ]
+				},
+				"post_cmd_handler" : {
+					"symlink_local_packages" : {
+						"$concat" : {
+							"vendor" : [
+								"clevercanyon/wpgroove-framework-pro"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}
