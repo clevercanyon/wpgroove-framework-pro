@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevercanyon/utilities.git",
-                "reference": "660fca36aa13d17df0bae496e1640cf8aa61081b"
+                "reference": "cfad930b2150f01a91d0d0a19d73af07538cbbbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clevercanyon/utilities/zipball/660fca36aa13d17df0bae496e1640cf8aa61081b",
-                "reference": "660fca36aa13d17df0bae496e1640cf8aa61081b",
+                "url": "https://api.github.com/repos/clevercanyon/utilities/zipball/cfad930b2150f01a91d0d0a19d73af07538cbbbc",
+                "reference": "cfad930b2150f01a91d0d0a19d73af07538cbbbc",
                 "shasum": ""
             },
             "require": {
@@ -122,7 +122,7 @@
                 "issues": "https://github.com/clevercanyon/utilities/issues",
                 "source": "https://github.com/clevercanyon/utilities/tree/main"
             },
-            "time": "2022-03-12T19:02:51+00:00"
+            "time": "2022-03-13T15:36:35+00:00"
         },
         {
             "name": "clevercanyon/wpgroove-framework",
@@ -130,12 +130,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevercanyon/wpgroove-framework.git",
-                "reference": "8e63bc75c051eb93aa1e1a733e92f55fb2eb0afc"
+                "reference": "0773bedd42fc6484621a86f1429923b1b23f48bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework/zipball/8e63bc75c051eb93aa1e1a733e92f55fb2eb0afc",
-                "reference": "8e63bc75c051eb93aa1e1a733e92f55fb2eb0afc",
+                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework/zipball/0773bedd42fc6484621a86f1429923b1b23f48bd",
+                "reference": "0773bedd42fc6484621a86f1429923b1b23f48bd",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +167,7 @@
                             "data": {
                                 "version": "1.0.0",
                                 "stable_tag": "1.0.0",
-                                "layout": "distro-lib",
+                                "layout": "library",
                                 "namespace_crux": "WP_Groove\\Framework",
                                 "name": "WP Groove: WordPress Framework"
                             }
@@ -213,7 +213,7 @@
                 "issues": "https://github.com/clevercanyon/wpgroove-framework/issues",
                 "source": "https://github.com/clevercanyon/wpgroove-framework/tree/main"
             },
-            "time": "2022-03-11T20:04:57+00:00"
+            "time": "2022-03-13T15:38:03+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1621,12 +1621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevercanyon/utilities-dev.git",
-                "reference": "7af24709ccd04552fe7f7ff9e517c328e35273af"
+                "reference": "8bd105dffd99774a9c5f598a89b9e1f0c9f436ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clevercanyon/utilities-dev/zipball/7af24709ccd04552fe7f7ff9e517c328e35273af",
-                "reference": "7af24709ccd04552fe7f7ff9e517c328e35273af",
+                "url": "https://api.github.com/repos/clevercanyon/utilities-dev/zipball/8bd105dffd99774a9c5f598a89b9e1f0c9f436ec",
+                "reference": "8bd105dffd99774a9c5f598a89b9e1f0c9f436ec",
                 "shasum": ""
             },
             "require": {
@@ -1674,7 +1674,7 @@
                 "issues": "https://github.com/clevercanyon/utilities-dev/issues",
                 "source": "https://github.com/clevercanyon/utilities-dev/tree/main"
             },
-            "time": "2022-03-05T20:47:27+00:00"
+            "time": "2022-03-13T14:39:11+00:00"
         },
         {
             "name": "clevercanyon/utilities-dev-npm",
@@ -1716,12 +1716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevercanyon/wpgroove-framework-dev.git",
-                "reference": "32e658abcba14ee45f4cc19779eb3b537fa532d8"
+                "reference": "dd4c007276a32a8626c5cc1eb92a664d756bf5df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework-dev/zipball/32e658abcba14ee45f4cc19779eb3b537fa532d8",
-                "reference": "32e658abcba14ee45f4cc19779eb3b537fa532d8",
+                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework-dev/zipball/dd4c007276a32a8626c5cc1eb92a664d756bf5df",
+                "reference": "dd4c007276a32a8626c5cc1eb92a664d756bf5df",
                 "shasum": ""
             },
             "require": {
@@ -1745,7 +1745,7 @@
                 "issues": "https://github.com/clevercanyon/wpgroove-framework-dev/issues",
                 "source": "https://github.com/clevercanyon/wpgroove-framework-dev/tree/main"
             },
-            "time": "2022-03-05T09:50:30+00:00"
+            "time": "2022-03-13T14:40:23+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
