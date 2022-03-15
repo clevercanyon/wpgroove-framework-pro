@@ -222,16 +222,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevercanyon/wpgroove-framework-pro.git",
-                "reference": "6178c5155cd7ca8e03dbd9cd99e740f98b11aca2"
+                "reference": "a92ff7eb03345fe3f8997b5933f72767312c7ba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework-pro/zipball/6178c5155cd7ca8e03dbd9cd99e740f98b11aca2",
-                "reference": "6178c5155cd7ca8e03dbd9cd99e740f98b11aca2",
+                "url": "https://api.github.com/repos/clevercanyon/wpgroove-framework-pro/zipball/a92ff7eb03345fe3f8997b5933f72767312c7ba0",
+                "reference": "a92ff7eb03345fe3f8997b5933f72767312c7ba0",
                 "shasum": ""
             },
             "require": {
-                "clevercanyon/utilities": "dev-main",
                 "clevercanyon/wpgroove-framework": "dev-main"
             },
             "require-dev": {
@@ -258,15 +257,6 @@
                             "assetDirs": [
                                 "../../../src/assets/admin"
                             ]
-                        },
-                        "post_cmd_handler": {
-                            "symlink_local_packages": {
-                                "$concat": {
-                                    "vendor": [
-                                        "clevercanyon/wpgroove-framework-pro"
-                                    ]
-                                }
-                            }
                         }
                     }
                 }
@@ -294,7 +284,7 @@
                 "issues": "https://github.com/clevercanyon/wpgroove-framework-pro/issues",
                 "source": "https://github.com/clevercanyon/wpgroove-framework-pro/tree/main"
             },
-            "time": "2022-03-15T03:50:51+00:00"
+            "time": "2022-03-15T04:01:46+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
