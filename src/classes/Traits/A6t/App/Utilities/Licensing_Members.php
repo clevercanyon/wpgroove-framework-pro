@@ -61,6 +61,7 @@ trait Licensing_Members {
 			'product_slug'              => $this->slug,
 			'product_version'           => $this->version,
 			'product_is_network_active' => $this->is_network_active(),
+			'product_license_key'       => $this->get_option( 'license_key' ),
 		];
 	}
 }
