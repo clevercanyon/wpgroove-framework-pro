@@ -45,23 +45,34 @@ use WP_Groove\{Framework_Pro as WPG_Pro};
  */
 trait Licensing_Members {
 	/**
-	 * Gets WordPress installation data for licensing.
+	 * Gets WordPress installation data for updates.
 	 *
 	 * @since 2022-03-12
 	 *
-	 * @return array WordPress installation data for licensing.
+	 * @return array WordPress installation data for updates.
 	 */
-	final public function installation_data_for_licensing() : array {
+	final public function installation_data_for_updates() : array {
 		return [
-			'wp_is_multisite'     => is_multisite(),
-			'wp_network_home_url' => rtrim( network_home_url(), '/' ),
-			'wp_home_url'         => rtrim( get_home_url(), '/' ),
+			'php_version'    => PHP_VERSION,
+			'php_extensions' => implode( ',', U\Env::loaded_extensions() ),
 
-			'product_type'              => $this->type,
-			'product_slug'              => $this->slug,
-			'product_version'           => $this->version,
-			'product_is_network_active' => $this->is_network_active(),
-			'product_license_key'       => $this->get_option( 'license_key' ),
+			'wp_version'      => U\Env::wp_version(),
+			'wp_is_multisite' => is_multisite(),
+
+			'wp_network_home_url' => rtrim( network_home_url(), '/' ),
+			'wp_home_url'         => rtrim( home_url(), '/' ),
+
+			'wp_active_plugins'         => implode( ',', U\Env::wp_active_plugins() ),
+			'wp_network_active_plugins' => implode( ',', U\Env::wp_network_active_plugins() ),
+
+			'wp_active_themes'         => implode( ',', U\Env::wp_active_themes() ),
+			'wp_network_active_themes' => implode( ',', U\Env::wp_network_active_themes() ),
+
+			'wp_app_type'              => $this->type,
+			'wp_app_slug'              => $this->slug,
+			'wp_app_version'           => $this->version,
+			'wp_app_is_network_active' => $this->is_network_active(),
+			'wp_app_license_key'       => $this->get_option( 'license_key' ),
 		];
 	}
 }
