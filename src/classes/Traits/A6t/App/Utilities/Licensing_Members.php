@@ -53,7 +53,7 @@ trait Licensing_Members {
 	 */
 	final public function installation_data() : array {
 		$is_multisite      = is_multisite();
-		$is_network_active = $this->is_network_active();
+		$is_network_active = $is_multisite && $this->is_network_active();
 
 		return [
 			'php_version'    => PHP_VERSION,
