@@ -56,5 +56,5 @@ trait Members {
 	 * @since 2021-12-28
 	 */
 	use WPG_Pro\Traits\A6t\App\Magic\Constructable_Members;
-	use WPG_Pro\Traits\A6t\App\Utilities\Licensing_Members;
+	use WPG_Pro\Traits\A6t\App\Utilities\Update_Members;
 }

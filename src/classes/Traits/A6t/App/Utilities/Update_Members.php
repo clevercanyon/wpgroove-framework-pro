@@ -43,7 +43,7 @@ use WP_Groove\{Framework_Pro as WPG_Pro};
  * @see   WPG_Pro\A6t\Plugin
  * @see   WPG_Pro\A6t\Theme
  */
-trait Licensing_Members {
+trait Update_Members {
 	/**
 	 * Gets WordPress installation data for updates.
 	 *
