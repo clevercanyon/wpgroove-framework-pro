@@ -35,7 +35,7 @@
  * Text Domain: wpgroove-framework-pro-plugin
  * Domain Path: /languages
  *
- * Update URI: https://wpgroove.com/product/framework-pro-plugin/update
+ * Update URI: https://wpgroove.com/wp-json/c24s/v1/product/framework-pro-plugin/wp-update
  */
 
 /**

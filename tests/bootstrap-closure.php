@@ -21,8 +21,8 @@ namespace WP_Groove\Framework_Pro\Tests;
 // </editor-fold>
 
 /**
- * Bootstrap.
+ * Bootstrap closure from WP Groove framework.
  *
  * @since 2022-02-21
  */
-( require __DIR__ . '/bootstrap-closure.php' )( __FILE__, 'plugin' );
+return ( require dirname( __FILE__, 2 ) . '/vendor/clevercanyon/wpgroove-framework/tests/bootstrap-closure.php' );

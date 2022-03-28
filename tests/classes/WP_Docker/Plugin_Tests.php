@@ -62,7 +62,7 @@ use WP_Groove\{Framework_Pro_Plugin as WP};
  * @since 2021-12-15
  * @coversDefaultClass \WP_Groove\Framework_Pro_Plugin\Plugin
  */
-final class Plugin_Tests extends WPG_Tests\A6t\Base {
+final class Plugin_Tests extends WPG_Pro_Tests\A6t\Base {
 	/**
 	 * @covers ::load()
 	 * @covers ::instance()

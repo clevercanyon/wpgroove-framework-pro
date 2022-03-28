@@ -15,9 +15,8 @@
  *
  * @since        2021-12-15
  *
- * @noinspection PhpUnhandledExceptionInspection
+ * @noinspection PhpComposerExtensionStubsInspection
  * @noinspection PhpStaticAsDynamicMethodCallInspection
- * phpcs:disable Generic.Commenting.DocComment.MissingShort
  */
 
 /**
@@ -26,7 +25,7 @@
  * @since 2021-12-25
  */
 declare( strict_types = 1 );
-namespace WP_Groove\Framework_Pro\Tests\Tests;
+namespace WP_Groove\Framework_Pro\Tests\A6t;
 
 /**
  * Utilities.
@@ -57,16 +56,8 @@ use WP_Groove\{Framework_Pro_Plugin as WP};
 // </editor-fold>
 
 /**
- * Test case.
+ * Base class for tests.
  *
  * @since 2021-12-15
- * @coversDefaultClass \Clever_Canyon\Utilities\Env
  */
-final class Env_Tests extends WPG_Pro_Tests\A6t\Base {
-	/**
-	 * @covers ::in_test_mode()
-	 */
-	public function test_in_test_mode() : void {
-		$this->assertSame( true, U\Env::in_test_mode(), $this->message() );
-	}
-}
+abstract class Base extends WPG_Tests\A6t\Base { }
